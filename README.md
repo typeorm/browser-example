@@ -14,4 +14,4 @@ Logs from your console:
 
 Here is what data is saved in the database:
 
-![typeorm-browser-websql-database](./resources/web-console.png)
+![typeorm-browser-websql-database](./resources/websql-database.png)
