@@ -1,0 +1,18 @@
+{
+    "version": "2.0.2",
+    "compilerOptions": {
+        "lib": ["es5", "es2015.promise", "dom"],
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "exclude": [
+        "build",
+        "node_modules",
+        "typings/browser.d.ts",
+        "typings/browser"
+    ]
+}

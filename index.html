@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>using TypeORM in the browser</title>
+
+    <script src="./node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+            map: {
+                "typeorm": "./node_modules/typeorm-browser/typeorm-browser.min.js"
+            },
+            packages: {
+                "typeorm": {
+                    format: "register"
+                }
+            }
+        });
+    </script>
+    <script>System.import("./src/index").catch(function(err){ console.error(err); });</script>
+
+</head>
+<body>
+</body>
+</html>
