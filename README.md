@@ -2,9 +2,10 @@
 
 1. clone repository 
 2. run `npm i`
-3. run `npm start`
-4. open site in the browser (`http://localhost:3000`)
-5. open your web developer console and take a look what queries are executed and what data is persisted
+3. run `tsc`
+4. run `npm start`
+5. open site in the browser (`http://localhost:3000`)
+6. open your web developer console and take a look what queries are executed and what data is persisted
 
 # Screenshots
 
