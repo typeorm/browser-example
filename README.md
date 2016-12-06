@@ -10,8 +10,8 @@
 
 Logs from your console:
 
-![typeorm-browser-websql-console](./tree/master/resources/web-console.png)
+![typeorm-browser-websql-console](./resources/web-console.png)
 
 Here is what data is saved in the database:
 
-![typeorm-browser-websql-database](./tree/master/resources/web-console.png)
+![typeorm-browser-websql-database](./resources/web-console.png)
