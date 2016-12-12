@@ -32,7 +32,7 @@
     "pg": "^6.1.0",
     "reflect-metadata": "^0.1.8",
     "systemjs": "^0.19.41",
-    "typeorm-browser": "0.0.3"
+    "typeorm-browser": "0.0.5"
   },
   "scripts": {
     "start": "http-server -p 3000 -s index.html"
