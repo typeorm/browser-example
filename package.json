@@ -32,6 +32,7 @@
     "pg": "^6.1.0",
     "reflect-metadata": "^0.1.8",
     "systemjs": "^0.19.41",
+    "typeorm": "0.0.5",
     "typeorm-browser": "0.0.5"
   },
   "scripts": {
