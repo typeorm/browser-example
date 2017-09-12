@@ -1,10 +1,11 @@
-import {Table, PrimaryColumn, Column, ManyToMany, JoinTable} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, ManyToOne} from "typeorm";
 import {Category} from "./Category";
+import {Author} from "./Author"
 
-@Table()
+@Entity()
 export class Post {
 
-    @PrimaryColumn("int", { generated: true })
+    @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
@@ -19,4 +20,6 @@ export class Post {
     @JoinTable()
     categories: Category[];
 
+    @ManyToOne(type => Author, author => author.posts)
+    author: Author;
 }
