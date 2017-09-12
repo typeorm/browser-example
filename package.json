@@ -24,14 +24,15 @@
     "typeorm-example"
   ],
   "devDependencies": {
-    "http-server": "^0.9.0",
-    "typescript": "^2.1.5"
+    "@types/reflect-metadata": "0.0.5",
+    "http-server": "0.10.0",
+    "typescript": "2.5.2"
   },
   "dependencies": {
-    "@types/node": "^7.0.4",
-    "reflect-metadata": "^0.1.9",
-    "systemjs": "^0.19.41",
-    "typeorm": "0.0.8"
+    "@types/node": "8.0.26",
+    "reflect-metadata": "0.1.10",
+    "systemjs": "^0.19.47",
+    "typeorm": "0.1.0-alpha.42"
   },
   "scripts": {
     "start": "http-server -p 3000 -s index.html"
