@@ -6,18 +6,16 @@ import {Category} from "./entity/Category";
 createConnection({
     type: "websql",
     database: "test",
-    extra: {
-        version: 1,
-        description: "test database",
-        size: 2 * 1024 * 1024
-    },
+    version: 1,
+    description: "test database",
+    size: 2 * 1024 * 1024,
     entities: [
         Author,
         Post,
         Category
     ],
     logging: true,
-    autoSchemaSync: true
+    synchronize: true
 }).then(async connection => {
 
     const category1 = new Category();
@@ -36,7 +34,7 @@ createConnection({
     post.author = author;
 
     const postRepository = connection.getRepository(Post);
-    await postRepository.persist(post);
+    await postRepository.save(post);
 
     console.log("Post has been saved: ", post);
 
