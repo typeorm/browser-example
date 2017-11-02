@@ -15,7 +15,7 @@ createConnection({
         Category
     ],
     logging: true,
-    synchronize: false
+    synchronize: true
 }).then(async connection => {
 
     const category1 = new Category();
