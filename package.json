@@ -31,7 +31,7 @@
     "@types/node": "8.0.26",
     "reflect-metadata": "0.1.10",
     "systemjs": "^0.19.47",
-    "typeorm": "0.1.0-alpha.50"
+    "typeorm": "0.1.1"
   },
   "scripts": {
     "start": "http-server -p 3000 -s index.html"
