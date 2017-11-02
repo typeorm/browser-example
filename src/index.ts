@@ -6,7 +6,7 @@ import {Category} from "./entity/Category";
 createConnection({
     type: "websql",
     database: "test",
-    version: 1,
+    version: "1",
     description: "test database",
     size: 2 * 1024 * 1024,
     entities: [
