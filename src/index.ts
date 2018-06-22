@@ -4,17 +4,15 @@ import {Post} from "./entity/Post";
 import {Category} from "./entity/Category";
 
 createConnection({
-    type: "websql",
-    database: "test",
-    version: "1",
-    description: "test database",
-    size: 2 * 1024 * 1024,
+    type: "sqljs",
+    location: "test",
+    autoSave: true,
     entities: [
         Author,
         Post,
         Category
     ],
-    logging: true,
+    logging: ['query', 'schema'],
     synchronize: true
 }).then(async connection => {
 

@@ -6,7 +6,8 @@
         "typeRoots": [
           "node_modules/@types"
         ],
-        "module": "system",
+        "outDir": "dist",
+        "module": "es2015",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,

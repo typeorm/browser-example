@@ -15,11 +15,13 @@ export class Post {
     text: string;
 
     @ManyToMany(type => Category, {
-        cascadeInsert: true
+        cascade: true
     })
     @JoinTable()
     categories: Category[];
 
-    @ManyToOne(type => Author, author => author.posts)
+    @ManyToOne(type => Author, author => author.posts, {
+        cascade: true
+    })
     author: Author;
 }
