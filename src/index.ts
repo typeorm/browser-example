@@ -15,6 +15,7 @@ createConnection({
     logging: ['query', 'schema'],
     synchronize: true
 }).then(async connection => {
+    document.write("Writing new post...<br>");
 
     const category1 = new Category();
     category1.name = "TypeScript";
@@ -34,6 +35,11 @@ createConnection({
     const postRepository = connection.getRepository(Post);
     await postRepository.save(post);
 
+    document.write("<br>Post has been save:<br>");
+    document.write("<pre>", JSON.stringify(post, null, 2), "</pre>");
     console.log("Post has been saved: ", post);
 
-}).catch(error => console.log("Error: ", error));
+}).catch(error => {
+    document.write("<b>Error: ", JSON.stringify(error, null, 2), "</b>");
+    console.log("Error: ", error)
+});

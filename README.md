@@ -11,4 +11,7 @@
 
 Logs from your console:
 
-![typeorm-browser-websql-console](./resources/web-console.png)
+![typeorm-browser-console](./resources/web-console.png)
+
+Browser shows basic output:
+![typeorm-browser](./resources/web-browser.png)
