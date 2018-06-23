@@ -14,4 +14,4 @@ Logs from your console:
 ![typeorm-browser-console](./resources/web-console.png)
 
 Browser shows basic output:
-![typeorm-browser](./resources/web-browser.png)
+![typeorm-browser](./resources/web-browser.PNG)
